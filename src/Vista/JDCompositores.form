@@ -203,10 +203,8 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="btnAgregar" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                          <Component id="btnEliminarCancion" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" alignment="0" min="-2" pref="570" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="btnEliminarCancion" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" min="-2" pref="570" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="135" max="32767" attributes="0"/>
               </Group>

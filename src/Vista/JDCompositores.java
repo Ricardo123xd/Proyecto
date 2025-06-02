@@ -10,21 +10,10 @@ import DAOMySQL.MySQLDAOManager;
 import Modelo.CancionCompositor;
 import Modelo.Canciones;
 import Modelo.Compositor;
-import MySQLConexion.Conectar;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.TableColumn;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.table.TableColumnModel;
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.engine.util.JRLoader;
-import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
@@ -79,7 +68,12 @@ public class JDCompositores extends javax.swing.JDialog {
      * caso contrario
      */
     private boolean validar() {
+        
         boolean validacion = false;
+        idCompositor = Integer.parseInt(txtIdCompositor.getText());
+        nombre = txtNombre.getText().trim();
+        edad = Integer.parseInt(txtEdad.getText().trim());
+        
         if (txtNombre.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Especifica el nombre del compositor");
             txtNombre.requestFocusInWindow();
